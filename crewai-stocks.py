@@ -193,7 +193,7 @@ if submit_button:
     st.error("Please fill the ticket field")
   else:
     #results = crew.kickoff(inputs=inputs)
-    results = crew.kickoff(inputs={'ticket': 'AAPL', 'datetime': datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
+    results = crew.kickoff(inputs={'ticket': topic, 'datetime': datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
 
     st.subheader("Results of your research:")
     st.write(results['final_output']
